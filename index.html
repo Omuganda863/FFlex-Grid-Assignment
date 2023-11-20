@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+<style>
+  body{
+    margin: 0;
+    background-color: hsl(226, 43%, 10%);
+  }
+  .main-div{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   gap: 20px;
+   padding: 100px;
+   justify-content: center;
+   margin-left: 60px;
+    
+  }
+  .jeremy{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    height: 40%;
+    width: 10%;
+    padding: 20px;
+    background:hsl(235, 46%, 65%) ;
+    border-radius: 10px;
+  }
+  .image{
+    height: 70px;
+    width: 70px;
+  }
+  .jeremy > h4{
+    color: white;
+  }
+  .daily p{
+    color: white;
+  }
+  .daily{
+    background:hsl(235, 46%, 20%) ;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  .work{
+    width: 125px;
+    border: 1px solid hsl(235, 46%, 20%);
+    height: 180px;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    }
+  .work-icon{
+    height: 40px;
+    width: 20px;
+  }
+  .play{
+    width: 125px;
+    border: 1px solid hsl(235, 46%, 20%);
+    height: 180px; 
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .study{
+    width: 125px;
+    border: 1px solid hsl(235, 46%, 20%);
+    height: 180px;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+  }
+  .play-icon{
+    height: 40px;
+    width: 20px;
+  }
+  .study-icon{
+    height: 40px;
+    width: 20px;
+  }
+   .exercise{
+    width: 120px;
+    border: 1px solid hsl(235, 46%, 20%);
+    height: 180px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+  } 
+  .exercise-icon{
+    height: 40px;
+    width: 20px;
+  }
+  .social-icon{
+    height: 40px;
+    width: 20px;
+  }
+  .social{
+    width: 125px;
+    border: 1px solid hsl(235, 46%, 20%);
+    height: 180px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .selfcare{
+    width: 120px;
+    border:hsl(235, 46%, 20%) 1px solid;
+    height: 180px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+
+  }
+  .selfcare-icon{
+    height: 40px;
+    width: 20px;
+  }
+ .lower-div{
+  display: flex;
+  align-items: end;
+  column-gap: 10px;
+  position: relative;
+  top: 0px;
+  right: 460px;
+ }
+ .daily{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+ }
+ .daily > p{
+  font-family: rubik;
+  font-weight: 300;
+ }
+ .jeremy > h4{
+  font-family: rubik;
+  font-weight: 300;
+ }
+ .work-body > h3{
+  font-family: rubik;
+  font-weight: 400;
+ }
+ .play-body > p{
+  font-family: rubik;
+  font-weight: 300;
+ }
+ .play-body > h3{
+  font-family: rubik;
+  font-weight: 400;
+ }
+ .work-body > p{
+  font-family: rubik;
+  font-weight: 300;
+ }
+ .study-body >h3{
+  font-family: rubik;
+  font-weight: 400;
+ }
+ .study-body > p{
+  font-family: rubik;
+  font-weight: 300;
+ }
+
+.exercise > p{
+  font-family: rubik;
+  font-weight: 300
+}
+.exercise > h3{
+  font-family: rubik;
+  font-weight: 400;
+}
+.social > p{
+  font-family: rubik;
+  font-weight: 300
+}
+.social > h3{
+  font-family: rubik;
+  font-weight: 400;
+}
+.selfcare > p{
+  font-family: rubik;
+  font-weight: 300
+}
+.selfcare > h3{
+  font-family: rubik;
+  font-weight: 400;
+}
+</style>
+
+</head>
+<body>
+<div class="main-div">
+ 
+  <div class="jeremy">
+    <img src="images/image-jeremy.png" alt="" class="image">
+    <h4 style="font-family: rubik; font-weight: 300;">Report for </h4>
+    <h4>Jeremy <br> Robson</h4>
+
+  <div class="daily">
+    <p>Daily</p>
+    <p>Weekly</p>
+    <p>Monthly</p>
+  </div>
+  </div>
+  <div class="work">
+    <img src="images/icon-work.svg" alt="" class="work-icon">
+    <div class="work-body">
+      <h3>Work</h3>
+      <p style="font-family: rubik;font-weight: 500;">32hrs</p>
+      <p>last week - 36hrs</p>
+    </div>
+  </div>
+  <div class="play">
+    <img src="images/icon-play.svg" alt="" class="play-icon">
+    <div class="play-body">
+    <h3>Play</h3>
+    <p style="font-family: rubik;font-weight: 500;">10hrs</p>
+    <p>Last week - 8hrs</p>
+    </div>
+  </div>
+  <div class="study">
+    <img src="images/icon-study.svg" alt="" class="study-icon">
+    <div class="study-body">
+    <h3 style="font-size:18px ;">Study</h3>
+    <p style="font-family: rubik;font-weight: 500;">4hrs</p>
+    <p>Last week - 7hrs</p>
+    </div>
+  </div>
+  <div class="lower-div">
+    <div class="exercise">
+      <img src="images/icon-exercise.svg" alt="" class="exercise-icon">
+    <h3 style="font-size:18px ;">Exercise</h3>
+    <p style="font-family: rubik;font-weight: 500;">4hrs</p>
+    <p>Last week -5hrs</p>
+  </div>
+  <div class="social">
+  <img src="images/icon-social.svg" alt="" class="social-icon">
+  <h3 style="font-size:18px ;" >Social</h3>
+  <p style="font-family: rubik;font-weight: 500;">5hrs</p>
+  <p>Last week -10hrs</p>
+  </div>
+  <div class="selfcare">
+  <img src="images/icon-self-care.svg" alt="" class="selfcare-icon">
+  <h3 style="font-size:18px ;" >Self Care</h3>
+  <p style="font-family: rubik;font-weight: 500;" >2hrs</p>
+  <p>Last week -2hrs</p>
+  </div>
+   </div>
+</div>
+</body>
+</html>
